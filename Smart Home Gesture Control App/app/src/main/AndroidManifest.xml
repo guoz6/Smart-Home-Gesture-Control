@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.gesture"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gesture"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="31"
+        tools:ignore="Instantiatable">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TurnOnLightsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TurnOffLightsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TurnOnFan"
+            android:exported="true" />
+        <activity
+            android:name=".TurnOffFan"
+            android:exported="true" />
+        <activity
+            android:name=".IncreaseFanSpeed"
+            android:exported="true" />
+        <activity
+            android:name=".DecreaseFanSpeed"
+            android:exported="true" />
+        <activity
+            android:name=".Thermo"
+            android:exported="true" />
+        <activity
+            android:name=".Zero"
+            android:exported="true" />
+        <activity
+            android:name=".One"
+            android:exported="true" />
+        <activity
+            android:name=".Two"
+            android:exported="true" />
+        <activity
+            android:name=".Three"
+            android:exported="true" />
+        <activity
+            android:name=".Four"
+            android:exported="true" />
+        <activity
+            android:name=".Five"
+            android:exported="true" />
+        <activity
+            android:name=".Six"
+            android:exported="true" />
+        <activity
+            android:name=".Seven"
+            android:exported="true" />
+        <activity
+            android:name=".Eight"
+            android:exported="true" />
+        <activity
+            android:name=".Nine"
+            android:exported="true" />
+        <activity
+            android:name=".ThirdScreen"
+            android:exported="true" />
+    </application>
+
+</manifest>
+
+
